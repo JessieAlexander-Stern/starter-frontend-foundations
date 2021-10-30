@@ -1,0 +1,74 @@
+/* --- General --- */
+
+main {
+  padding: 20px 0;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+h1 {
+  margin: 0 0 30px 10px;
+}
+
+h2 {
+  margin: 0 10px;
+  border-bottom: 1px solid gray;
+}
+
+h3 {
+  margin: 12px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+/* --- Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+/* Groups and items (Desktop) */
+
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+p {
+  font-size: 14px;
+}
+
+@media all and (min-width: 800px) {
+  p {
+    font-size: 24px;
+  }
+}
+
+body {
+  background-color: red;
+}
+
+/* This applies from 600px and larger */
+@media all and (min-width: 600px) {
+  body {
+    background-color: green;
+  }
+}
